@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Funnel Display", serif;
+    user-select: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 500px;
+    height: 600px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form h1{
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+form span{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-bottom: 20px;
+}
+form label{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+form input{
+    width: 280px;
+    height: 45px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #212121;
+    color: #FFFFFF;
+}
+form button{
+    width: 285px;
+    outline: none;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 0px 5px;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        width: 100%;
+        height: 30px;
+    }
+    form button{
+        width: 70%;
+        height: 35px;
+    }
+}

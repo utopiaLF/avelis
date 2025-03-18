@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="theme-color" content="#021313">
+    <link rel="stylesheet" href="cart.css">
+    <title>Avelis Cart Page</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Avelis</a>
+            
+            <h1>Cart Page</h1>
+        </nav>
+    </header>
+
+    <p class="saved">Your saved products:</p>
+    <main id="main">
+    </main>
+
+    <script>
+        function showP() {
+    const products = JSON.parse(localStorage.getItem('products')) || [];
+
+    // Check if products are empty and show message
+    const savedElement = document.querySelector('.saved');
+    if (products.length < 1) {
+        if (savedElement) {
+            savedElement.textContent = 'No products in your cart';
+        }
+    }
+
+    // Get the main container where products will be displayed
+    let main = document.getElementById('main');
+    
+    // Clear the main container before appending products
+    main.innerHTML = '';
+
+    // Loop through the products array and display each product
+    products.forEach((product, index) => {
+        let article = document.createElement('article');
+        
+        let name = document.createElement('h1');
+        let price = document.createElement('h3');
+        let deleteBtn = document.createElement('button');
+
+        name.textContent = product.name;
+        price.textContent = product.price;
+        deleteBtn.textContent = 'Delete';
+
+        // Add event listener to the delete button to remove the product
+        deleteBtn.addEventListener('click', function() {
+            // Fade out the article before deletion
+            article.classList.add('fade-out');
+
+            // Wait for the fade-out animation to complete, then delete the product
+            setTimeout(function() {
+                products.splice(index, 1); // Remove the product from the array
+                localStorage.setItem('products', JSON.stringify(products)); // Update localStorage
+
+                // Remove the article element from the DOM
+                main.removeChild(article);
+                
+                // Check if there are any products left
+                if (products.length === 0 && savedElement) {
+                    savedElement.textContent = 'No products in your cart';  // Show message when cart is empty
+                }
+            }, 500); // Match with the fade-out animation duration
+        });
+
+        // Append the elements to the article
+        article.appendChild(name);
+        article.appendChild(price);
+        article.appendChild(deleteBtn);
+
+        // Append the article to the main container
+        main.appendChild(article);
+    });
+}
+
+// Call the function to display products when the page loads
+showP();
+
+    </script>
+</body>
+</html>
