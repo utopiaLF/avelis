@@ -1,11 +1,21 @@
-# Интернет-магазин часов
+# Avelis is a simple and clean online watch store built with HTML, CSS and JS
 
-Это мой проект — **интернет-магазин часов**, который я создал для практики. Сайт адаптивен и корректно отображается как на мобильных устройствах, так и на десктопах. Для его разработки использованы **чистый HTML**, **CSS** и **JavaScript**.
+### It's fully responsive and works well on phones and computers
 
-### Технологии
-- HTML
-- CSS
-- JavaScript
+<br>
 
-### Ссылка на сайт
-[Посетить сайт](https://utopialf.github.io/avelis/)
+# Features:
+
+### - Modern and minimal design
+
+### - Mobile-friendly layout
+
+### - Basic shopping cart system
+
+### - Smooth and simple browsing experience
+
+<br>
+
+## **The entire design of Avelis was created by me from scratch!!!**
+
+[You can view the website here](https://utopialf.github.io/avelis/)
