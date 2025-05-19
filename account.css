@@ -9,7 +9,7 @@ body{
     height: 100vh;
     font-family: "Funnel Display", serif;
     user-select: none;
-    background-color: black;
+    background-color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,7 @@ form input{
     font-size: 1rem;
     background-color: #212121;
     color: #FFFFFF;
+    box-shadow: 0px 0px 5px black;
 }
 form button{
     width: 285px;
@@ -55,7 +56,12 @@ form button{
     border: none;
     height: 40px;
     font-size: 1rem;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+form .back{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 80px;
 }
 
 @media (max-width: 768px) {
