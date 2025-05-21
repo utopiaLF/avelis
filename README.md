@@ -9,6 +9,7 @@
 ### Note:
  - There is no backend yet. The cart feature works using localStorage in the browser
 
+#### **Live Demo: https://utopialf.github.io/avelis**
 <br>
 
-### **Live Demo: https://utopialf.github.io/avelis**
+**This project is licensed under the [MIT License](./LICENSE). Have fun!**
