@@ -1,21 +1,14 @@
-# Avelis is a simple and clean online watch store built with HTML, CSS and JS
+# Avelis
 
-### It's fully responsive and works well on phones and computers
+**Avelis is a modern frontend project for a minimalist and clean-designed watch e-commerce website. The interface is fully responsive and optimized for mobile devices, ensuring a smooth experience across all screen sizes** <br>
+## Tech Stack:
+ - **HTML**
+ - **CSS**
+ - **Vanilla javaScript**
 
-<br>
-
-# Features:
-
-### - Modern and minimal design
-
-### - Mobile-friendly layout
-
-### - Basic shopping cart system
-
-### - Smooth and simple browsing experience
+### Note:
+ - There is no backend yet. The cart feature works using localStorage in the browser
 
 <br>
 
-## **The entire design of Avelis was created by me from scratch!!!**
-
-[You can view the website here](https://utopialf.github.io/avelis/)
+### **Live Demo: https://utopialf.github.io/avelis**
